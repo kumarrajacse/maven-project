@@ -27,6 +27,7 @@ stage('Build'){
 			}
 		
 		stage('SonarQube analysis') {
+		    steps {
 withSonarQubeEnv('sonar')
 {
 sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.6.0.1398:sonar'
@@ -34,3 +35,4 @@ sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.6.0.1398:sonar'
 }
 }
 }	
+}
