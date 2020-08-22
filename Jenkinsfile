@@ -24,9 +24,9 @@ stage('Build'){
                     archiveArtifacts artifacts: '**/target/*.war'
                 }
             }	
-stage('publishing the test results')
+stage('publishing the test results'){
 steps{
-{
+
 junit '**/target/*.xml'
 }
 }			
