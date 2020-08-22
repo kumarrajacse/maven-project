@@ -23,7 +23,13 @@ stage('Build'){
                     echo 'Now Archiving...'
                     archiveArtifacts artifacts: '**/target/*.war'
                 }
-            }		
+            }	
+stage('publishing the test results')
+steps{
+{
+junit '**/target/*.xml'
+}
+}			
 }
 }	
 }
