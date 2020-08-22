@@ -26,7 +26,7 @@ pipeline{
         } */
         stage('Deploying into tomcat'){
             steps{
-                sh 'docker container restart tomcat'
+                sh ' sudo docker container restart tomcat'
                 echo 'Deployed successfully'
             }
         }
