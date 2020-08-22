@@ -25,14 +25,5 @@ stages{
             }
         }
 
-        /*stage ('Deployments'){
-            parallel{
-                stage ('Deploy to tomcat server'){
-                    steps {
-                        sh "scp -i  **/target/*.war /var/lib/tomcat7/webapps"
-                    }
-                }
-            }
         }
-    }*\
-}
+		
