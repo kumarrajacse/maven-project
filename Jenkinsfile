@@ -25,11 +25,11 @@ stage('Build'){
                 }
             }	
 			}
-stage('publishing the test results'){
+/*stage('publishing the test results'){
 steps{
 
 junit '**/target/*.xml'
 }
-}			
+}*\			
 }
 }	
